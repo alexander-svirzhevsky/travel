@@ -1,0 +1,109 @@
+.container-hero {
+    min-height: 100vh;
+}
+
+.section-hero {
+    background-image: url('../../img/bg/Herohero.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero {
+    color: #FFFFFF;
+    padding-top: rem(263px);
+    // margin-bottom: rem(153px);
+
+    @include tablets() {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include phones() {
+        padding-top: rem(150px);
+    }
+}
+
+.hero__title {
+    width: 55%;
+    font-size: rem(50px);
+    line-height: rem(60px);
+    font-weight: 700;
+    margin-bottom: rem(22px);
+
+    @include tablets() {
+        width: 100%;
+        text-align: center;
+    }
+
+    @include phones() {
+        margin-bottom: rem(50px);
+    }
+}
+
+.hero__text {
+    display: block;
+    width: 50%;
+    line-height: rem(24px);
+    margin-bottom: rem(59px);
+
+    @include tablets() {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    padding-bottom: rem(376px);
+    flex-wrap: wrap;
+
+    @include tablets() {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.search {
+    width: rem(297px);
+    background-color: transparent;
+    border: 0;
+    background: url('../../img/bg/cirlce.png') left center no-repeat;
+    background-size: rem(20px);
+    padding: rem(20px) rem(23px) rem(20px) rem(43px);
+    border-bottom: rem(2px) solid #BFC0C5;
+    margin-right: rem(61px);
+    color: #fff;
+    font-weight: 400;
+    font-size: rem(18px);
+    margin-bottom: 20px;
+
+    &::placeholder {
+        color: inherit;
+    }
+
+    @include tablets() {
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
+}
+
+.submit {
+    padding: rem(14px) rem(39px);
+    background: #1B7DFF;
+    border: 0;
+    cursor: pointer;
+    font-size: rem(24px);
+    line-height: rem(29px);
+    color: #fff;
+    transition: .3s;
+    display: block;
+
+    &:hover {
+        background: #1454a9;
+        color: #e2dede;
+    }
+}

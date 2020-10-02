@@ -1,0 +1,128 @@
+.rating-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: rem(58px);
+
+    @include tablets() {
+        grid-gap: rem(42px) rem(27px);
+    }
+}
+
+.rating {
+    grid-column: span 2;
+
+    @include tablets() {
+        grid-column: span 3;
+    }
+
+    @include phones() {
+        grid-column: span 6;
+    }
+}
+
+.section-rating {
+    margin-bottom: rem(144px);
+}
+
+.rating-pic {
+    display: block;
+    position: relative;
+    margin-bottom: rem(45px);
+    overflow: hidden;
+
+    &:hover .rating-img {
+        transform: scale(1.05);
+    }
+
+    @include tablets() {
+        margin-bottom: rem(30px);
+    }
+}
+
+.section__title--reating {
+    margin-bottom: rem(54px);
+}
+
+.rating__item {
+    display: flex;
+    flex-direction: column;
+    display: block;
+}
+
+.rating-img {
+    // max-width: rem(386px);
+    // height: rem(377px);
+    transition: .15s all;
+    width: 100%;
+}
+
+.rating-pic__score {
+    color: #FFFFFF;
+    fill: #fff;
+    height: rem(55px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(21, 24, 36, 0.6);
+    width: 100%;
+    padding: rem(16px) rem(16px);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+
+.rating-pic__place {
+    font-size: rem(18px);
+    line-height: rem(24px);
+}
+
+.place-rating {
+    display: flex;
+    align-items: center;
+}
+
+.heart {
+    width: rem(16px);
+    height: rem(15px);
+    margin-right: rem(14px);
+}
+
+.comment {
+    width: rem(14px);
+    height: rem(14px);
+}
+
+.rating-pic__like {
+    margin-right: rem(4px);
+}
+
+.rating-pic__comment {
+    margin-right: rem(9px);
+}
+
+.rating__description {
+    display: block;
+    margin-bottom: rem(31px);
+
+    @include tablets() {
+        margin-bottom: rem(20px);
+    }
+}
+
+.btn {
+    color: #FFFFFF;
+    line-height: rem(19px);
+    padding: rem(12px) rem(19px);
+    background-color: #006DFE;
+    ;
+    display: block;
+    width: rem(118px);
+    transition: .3s;
+
+    &:hover {
+        background: #1454a9;
+        // color: #e2dede;
+    }
+}

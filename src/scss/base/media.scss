@@ -1,0 +1,32 @@
+@function rem($px) {
+    @return $px / 16px+0rem;
+}
+
+// .class {
+//     font-size: rem(65px);
+// }
+
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+// @include tablets() { .... }
+
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
+}
+
+// @include phones() { .... }
+
+// @include tablets() {
+//     .container {
+//         max-width: 720px;
+//     }
+
+// }
