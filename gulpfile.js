@@ -27,7 +27,7 @@ const imagemin = require('gulp-imagemin');
 
 const paths = {
   src: './src/',              // paths.src
-  build: './build/'           // paths.build
+  build: './docs/'           // paths.build
 };
 
 function styles() {
@@ -127,7 +127,7 @@ function video() {
 }
 
 function clean() {
-  return del('build/')
+  return del('docs/')
 }
 
 function watch() {
@@ -159,7 +159,7 @@ exports.sprite = sprite;
 exports.scripts_2 = scripts_2;
 exports.video = video;
 
-gulp.task('build', gulp.series(
+gulp.task('docs', gulp.series(
   clean,
   gulp.parallel(styles, scripts, scripts_2, svgSprite, scriptsVendors, htmls, images, fonts, sprite, video)
 ));

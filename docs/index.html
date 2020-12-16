@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel odigo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrap">
+            <a href="#" class="logo-link">
+                <img src="img/logo.png" alt="odigo" class="logo">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#articles" class="menu_link js-scroll">
+                            Articles
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#locations" class="menu_link js-scroll">
+                            Locations
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#videos" class="menu_link js-scroll">
+                            Videos
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#sign-in" class="menu_link js-scroll">
+                            Sign in
+                        </a>
+                    </li>
+                    <a href="" class="cross-link">
+                        <svg class="cross">
+                            <use xlink:href="img/sprite.svg#cross"></use>
+                        </svg>
+                    </a>
+
+                </ul>
+            </nav>
+            <a href="#" class="hamburger">
+                <span class="hamburger__plank"></span>
+                <span class="hamburger__plank"></span>
+                <span class="hamburger__plank"></span>
+            </a>
+        </div>
+
+    </header>
+    <div class="wrapper">
+        <section class="section-hero" id="sign-in">
+            <div class="container container-hero">
+                <div class="hero">
+                    <h1 class="hero__title">Discover Amazing places in Japan</h1>
+                    <p class="hero__text">
+                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being
+                        gorgeous with belly side up i could pee on this if i had the energy but under the bed, for
+                        attack the child, open the door.
+                    </p>
+                    <form action="" class="form">
+                        <input type="hidden" name="to" value="some@mail.com">
+                        <input type="text" name="what" placeholder="What would you like to do?" class="search">
+                        <input type="text" name="where" placeholder="Where would you like to go?" class="search">
+                        <input type="submit" value="SEARCH" class="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section section-benefits">
+            <div class="container">
+                <h2 class="benefits__title">
+                    Benefits of Odigo
+                </h2>
+                <ul class="benefits__list">
+                    <li class="benefits__item">
+                        <svg class="palace-icon">
+                            <use xlink:href="img/sprite.svg#japan"></use>
+                        </svg>
+                        <span class="benefits__desc">Welcome to Odigo!</span>
+                        <span class="benefits__text">Jump off balcony, onto stranger's head. Chase ball of string hide
+                            when guests come over.</span>
+                        <div class="controls-wrap">
+                            <a href="#!" class="benefits__control">
+                                <span class="benefits__link">LEARN MORE</span>
+                                <svg class="control-icon">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </li>
+                    <li class="benefits__item">
+                        <svg class="palace-icon">
+                            <use xlink:href="img/sprite.svg#person"></use>
+                        </svg>
+                        <span class="benefits__desc">Your Personal Japan Guide</span>
+                        <span class="benefits__text">Jump off balcony, onto stranger's head. Chase ball of string hide
+                            when guests come over.</span>
+                        <div class="controls-wrap">
+                            <a href="#!" class="benefits__control">
+                                <span class="benefits__link">LEARN MORE</span>
+                                <svg class="control-icon">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="benefits__item">
+                        <svg class="palace-icon">
+                            <use xlink:href="img/sprite.svg#building"></use>
+                        </svg>
+                        <span class="benefits__desc">Promoting Local Businesses</span>
+                        <span class="benefits__text">Jump off balcony, onto stranger's head. Chase ball of string hide
+                            when guests come over.</span>
+                        <div class="controls-wrap">
+                            <a href="#!" class="benefits__control">
+                                <span class="benefits__link">LEARN MORE</span>
+                                <svg class="control-icon">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="section section-place">
+            <div class="section__header">
+                <h2 class="section__title">Get inspired for your next trip</h2>
+                <a href="#!" class="benefits__control">
+                    <span class="benefits__link">LEARN MORE</span>
+                    <svg class="control-icon">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                </a>
+            </div>
+            <ul class="places">
+                <li class="places__item places__item--bg">
+                    <a href="#!" class="places__link">
+                        <img src="img/bg/place1.png" alt="Mount Fuji" class="places-img places-img--bg">
+                        <h3 class="places-title">Mount Fuji</h3>
+                    </a>
+                </li>
+                <li class="places__item places__item--bg">
+                    <a href="#!" class="places__link">
+                        <img src="img/bg/place2.png" alt="Mount Fuji" class="places-img places-img--bg">
+                        <h3 class="places-title">Kyoto</h3>
+                    </a>
+                </li>
+                <li class="places__item places__item--sm">
+                    <a href="#!" class="places__link">
+                        <img src="img/bg/place3.png" alt="Mount Fuji" class="places-img places-img--sm">
+                        <h3 class="places-title">Tokyo</h3>
+                    </a>
+                </li>
+                <li class="places__item places__item--sm">
+                    <a href="#!" class="places__link">
+                        <img src="img/bg/place4.png" alt="Mount Fuji" class="places-img places-img--sm">
+                        <h3 class="places-title">Niigata</h3>
+                    </a>
+                </li>
+                <li class="places__item places__item--sm">
+                    <a href="#!" class="places__link">
+                        <img src="img/bg/place5.png" alt="Mount Fuji" class="places-img places-img--sm">
+                        <h3 class="places-title">Sapporo</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="section section-tours" id="articles">
+            <ul class="tours">
+                <li class="tours__item">
+                    <img src="img/bg/desc1.png" alt="" class="tours__img">
+                    <div class="tours__desc">
+                        <h3 class="tours-title">Prefecture in Focus: Tottori</h3>
+                        <p class="tours-text">Jump off balcony, onto stranger's head. Chase ball of string hide when
+                            guests come over. Being gorgeous with belly side up i could pee on this if i had the energy
+                            but under the bed, for attack the child, open the door, </p>
+                        <a href="#!" class="benefits__control">
+                            <span class="benefits__link">VIEW PREFECTURE</span>
+                            <svg class="control-icon">
+                                <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li class="tours__item">
+                    <div class="tours__desc">
+                        <h3 class="tours-title">Featured Neighborhood: Kyoto’s Arashiyama</h3>
+                        <p class="tours-text">Jump off balcony, onto stranger's head. Chase ball of string hide when
+                            guests come over. Being gorgeous with belly side up i could pee on this if i had the energy
+                            but under the bed, for attack the child, open the door, </p>
+                        <a href="#!" class="benefits__control">
+                            <span class="benefits__link">VIEW NEIGHBORHOOD</span>
+                            <svg class="control-icon">
+                                <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <img src="img/bg/desc2.png" alt="" class="tours__img tours__img--card">
+                </li>
+            </ul>
+        </section>
+        <section class="section section-rating" id="locations">
+            <h2 class="section__title section__title--reating">Today top places to visit</h2>
+            <div class="rating-list">
+                <div class="rating">
+                    <div class="rating__item">
+                        <a href="#!" class="rating-pic">
+                            <img src="img/to-visit/visit1.png" alt="" class="rating-img">
+                            <div class="rating-pic__score">
+                                <span class="rating-pic__place">NAGOYA</span>
+                                <div class="place-rating">
+                                    <span class="rating-pic__like">221</span>
+                                    <svg class="heart">
+                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                    </svg>
+                                    <span class="rating-pic__comment">50</span>
+                                    <svg class="comment">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <span class="rating__description">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Being
+                            gorgeous with belly side up i could pee on this.
+                        </span>
+                        <a href="#!" class="btn">SEE MORE</a>
+                    </div>
+
+                </div>
+                <div class="rating">
+                    <div class="rating__item">
+                        <a href="#!" class="rating-pic">
+                            <img src="img/to-visit/visit2.png" alt="" class="rating-img">
+                            <div class="rating-pic__score">
+                                <span class="rating-pic__place">NIIGATA</span>
+                                <div class="place-rating">
+                                    <span class="rating-pic__like">221</span>
+                                    <svg class="heart">
+                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                    </svg>
+                                    <span class="rating-pic__comment">50</span>
+                                    <svg class="comment">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <span class="rating__description">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Being
+                            gorgeous with belly side up i could pee on this.
+                        </span>
+                        <a href="#!" class="btn">SEE MORE</a>
+                    </div>
+
+                </div>
+                <div class="rating">
+                    <div class="rating__item">
+                        <a href="#!" class="rating-pic">
+                            <img src="img/to-visit/visit3.png" alt="" class="rating-img">
+                            <div class="rating-pic__score">
+                                <span class="rating-pic__place">OSAKA</span>
+                                <div class="place-rating">
+                                    <span class="rating-pic__like">221</span>
+                                    <svg class="heart">
+                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                    </svg>
+                                    <span class="rating-pic__comment">50</span>
+                                    <svg class="comment">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <span class="rating__description">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Being
+                            gorgeous with belly side up i could pee on this.
+                        </span>
+                        <a href="#!" class="btn">SEE MORE</a>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="rating__item">
+                        <a href="#!" class="rating-pic">
+                            <img src="img/to-visit/visit4.png" alt="" class="rating-img">
+                            <div class="rating-pic__score">
+                                <span class="rating-pic__place">SAITAMA</span>
+                                <div class="place-rating">
+                                    <span class="rating-pic__like">221</span>
+                                    <svg class="heart">
+                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                    </svg>
+                                    <span class="rating-pic__comment">50</span>
+                                    <svg class="comment">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <span class="rating__description">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Being
+                            gorgeous with belly side up i could pee on this.
+                        </span>
+                        <a href="#!" class="btn">SEE MORE</a>
+                    </div>
+
+                </div>
+                <div class="rating">
+                    <div class="rating__item">
+                        <a href="#!" class="rating-pic">
+                            <img src="img/to-visit/visit5.png" alt="" class="rating-img">
+                            <div class="rating-pic__score">
+                                <span class="rating-pic__place">UENO</span>
+                                <div class="place-rating">
+                                    <span class="rating-pic__like">221</span>
+                                    <svg class="heart">
+                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                    </svg>
+                                    <span class="rating-pic__comment">50</span>
+                                    <svg class="comment">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <span class="rating__description">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Being
+                            gorgeous with belly side up i could pee on this.
+                        </span>
+                        <a href="#!" class="btn">SEE MORE</a>
+                    </div>
+
+                </div>
+                <div class="rating">
+                    <div class="rating__item">
+                        <a href="#!" class="rating-pic">
+                            <img src="img/to-visit/visit6.png" alt="" class="rating-img">
+                            <div class="rating-pic__score">
+                                <span class="rating-pic__place">SHIBUYA</span>
+                                <div class="place-rating">
+                                    <span class="rating-pic__like">221</span>
+                                    <svg class="heart">
+                                        <use xlink:href="img/sprite.svg#heart"></use>
+                                    </svg>
+                                    <span class="rating-pic__comment">50</span>
+                                    <svg class="comment">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <span class="rating__description">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Being
+                            gorgeous with belly side up i could pee on this.
+                        </span>
+                        <a href="#!" class="btn">SEE MORE</a>
+                    </div>
+
+                </div>
+                </ul>
+        </section>
+        <section class="section-video" id="videos">
+            <div class="player">
+                <div id="yt-player" class="player__elem">
+                    <video id="video" controls>
+                        <source src="video/mikethefrog.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="player__splash" id="splash">
+                    <a href="#" class="play" id="play">
+                        <svg class="play-icon">
+                            <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__wrap">
+                <a href="#!" class="logo-link logo-link--footer">
+                    <img src="img/logo2.png" alt="odigo" class="logo">
+                </a>
+                <aside class="navigation">
+                    <ul class="site-navigation">
+                        <li class="site-navigation__item site-navigation__item--bold">
+                            <a href="#!" class="site-navigation__link">Company</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#!" class="site-navigation__link">About</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#!" class="site-navigation__link">Team</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#!" class="site-navigation__link">Careers</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#!" class="site-navigation__link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <ul class="site-navigation">
+                        <li class="site-navigation__item site-navigation__item--bold">
+                            <a href="#!" class="site-navigation__link">Locations</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#!" class="site-navigation__link">Tokyo</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#!" class="site-navigation__link">Kyoto</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#!" class="site-navigation__link">Osaka</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#!" class="site-navigation__link">Hokkaido</a>
+                        </li>
+                    </ul>
+                    <ul class="site-navigation">
+                        <li class="site-navigation__item site-navigation__item--bold">
+                            <a href="#!" class="site-navigation__link">Social Media</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#!" class="site-navigation__link">Facebook</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#!" class="site-navigation__link">Twitter</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#!" class="site-navigation__link">Instagram</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="#!" class="site-navigation__link">Youtube</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                Done
+            </div>
+            <!-- <div class="modal__btn-container">
+                <a href="#" class="submit js-submit-close">Close</a>
+            </div> -->
+        </div>
+    </div>
+    <script src="./js/vendors.min.js"></script>
+    <script src="./js/script.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
